@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('tapasapp.urls')),
+    path('add_menu', views.add_menu, name='add_menu'),
 ]
