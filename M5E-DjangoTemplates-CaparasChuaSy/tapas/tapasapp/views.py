@@ -14,5 +14,4 @@ def view_menu(request):
 
 
 def add_menu(request):
-    dish_objects = Dish.objects.all()
     return render(request, 'tapasapp/add_menu.html')
