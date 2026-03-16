@@ -2,8 +2,8 @@
 {% load static %}
 
 {% block sidemenu %}
-<!-- Side Menu (Left Column) -->
-<div class="col-md-3">
+<!-- back to main -->
+<div class="col-md-5">
     <div class="side-menu">
         <ul>
             <li><a href="{% url 'view_menu' %}">Back to Main</a></li>
@@ -13,28 +13,28 @@
 {% endblock %}
 
 {% block content %}
-<div class="col-md-9">
+<div class="col-md-8">
     <h3>Type in Dish Details:</h3>
     <form>
-        <!-- Dish Name Input -->
+        <!-- dish name -->
         <div class="mb-3">
             <label for="name" class="form-label">Name:</label>
             <input type="text" id="name" name="name" class="form-control" required>
         </div>
 
-        <!-- Cooking Time Input -->
+        <!-- cooking time -->
         <div class="mb-3">
             <label for="cook_time" class="form-label">Cook Time:</label>
             <input type="text" id="cook_time" name="cook_time" class="form-control" required>
         </div>
 
-        <!-- Prep Time Input -->
+        <!-- prep time -->
         <div class="mb-3">
             <label for="prep_time" class="form-label">Prep Time:</label>
             <input type="text" id="prep_time" name="prep_time" class="form-control" required>
         </div>
 
-        <!-- Submit Button (not functional yet) -->
+        <!-- submit button -->
         <button type="submit" class="btn btn-primary">Add to Dishes</button>
     </form>
 </div>
