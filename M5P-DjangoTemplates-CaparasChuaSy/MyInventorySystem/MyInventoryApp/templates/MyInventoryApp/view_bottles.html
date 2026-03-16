@@ -16,16 +16,16 @@
             </tr>
         </thead>
         <tbody>
-            {% for waterbottle in waterbottles %}
+            {% for bottle in bottles %}
                 <tr>
-                    <td>{{ waterbottle.sku }}</td>
-                    <td>{{ waterbottle.brand }}</td>
-                    <td>{{ waterbottle.cost }}</td>
-                    <td>{{ waterbottle.size }}</td>
-                    <td>{{ waterbottle.mouth_size }}</td>
-                    <td>{{ waterbottle.color }}</td>
-                    <td>{{ waterbottle.supplied_by }}</td>
-                    <td>{{ waterbottle.current_quantity }}</td>
+                    <td>{{ bottle.sku }}</td>
+                    <td>{{ bottle.brand }}</td>
+                    <td>{{ bottle.cost }}</td>
+                    <td>{{ bottle.size }}</td>
+                    <td>{{ bottle.mouth_size }}</td>
+                    <td>{{ bottle.color }}</td>
+                    <td>{{ bottle.supplied_by }}</td>
+                    <td>{{ bottle.current_quantity }}</td>
                 </tr>
             {% endfor %}
         </tbody>
